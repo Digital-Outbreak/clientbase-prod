@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fontSans.className}>
+      <body className={cn("bg-[#100720]", fontSans.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

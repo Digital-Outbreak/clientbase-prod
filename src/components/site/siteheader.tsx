@@ -2,14 +2,10 @@ import React from "react";
 import logo from "../../../public/logo.svg";
 import Image from "next/image";
 import { Button } from "../ui/button";
+
 const SiteHeader = () => {
   return (
-    <div
-      className="flex  
-    z-[2]
-
-    justify-between px-10 h-[10vh] items-center"
-    >
+    <div className="flex z-[3] justify-between px-10 h-[10vh] items-center relative bg-gradient-to-b from-background/30 to-transparent">
       <div className="flex gap-2 items-center">
         <Image src={logo} alt="Logo" className="object-contain h-10 w-10" />
         <span className="text-3xl font-semibold tracking-wide">Clientbase</span>

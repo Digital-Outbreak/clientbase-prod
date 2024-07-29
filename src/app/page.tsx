@@ -1,13 +1,14 @@
-import SiteHeader from "@/components/site/siteheader";
 import React from "react";
+import SiteHeader from "@/components/site/siteheader";
 import LandingComponent from "@/components/site/landingcomponent";
+import SiteBlock from "@/components/site/siteblock";
 
 const LandingHome = () => {
   return (
-    <main className="relative bg-[#100720] text-white min-h-screen overflow-hidden">
+    <main className="relative text-white min-h-screen overflow-hidden">
       <SiteHeader />
-      {/* Container for hero background image */}
-      <div className="absolute -inset-11 z-[1]">
+
+      <div className="absolute inset-0 -z-10">
         <img
           src="./bgs/hero-bg.png"
           alt="Hero background"
@@ -15,6 +16,7 @@ const LandingHome = () => {
         />
       </div>
       <LandingComponent />
+      <SiteBlock />
     </main>
   );
 };
